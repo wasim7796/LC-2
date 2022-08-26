@@ -23,19 +23,34 @@
         }
          th{
             padding: 3px;
+text-align: left;
         } 
          td{
             padding: 8px;
         } 
+        .w{
+        color:yellowgreen;
+        background-color:red;
+        padding: 5px;
+        }
         
-   
+   .btn{
+    background-color:lightcoral;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+   text-transform: capitalize;
+
+   }
+
     </style>
 
 </head>
 
 <body>
   
-    <table>
+    <table class="hide" >
         <tr>
           <img src="unk.png" alt="html tut" style="     margin-left: 45%; width:10%;height:20%;">
             <th>Name</th>
@@ -62,7 +77,7 @@
             <th>Education</th>
              
         <tr>
-            <td>BBA ( <sup style="color:red"> hons</sup>) from <mark>Poonch University</mark> </td> <br>
+            <td>BBA ( <sup style="color:red"> hons</sup>) from <mark class="w" >Poonch University</mark> </td> <br>
         </tr>
         </tr>
             <th>Univerity Link</th>
@@ -78,9 +93,26 @@
             <th>Github</th>
             <tr>
                 <td>Wasim khan( <sup style="color: red"> Front end developer</sup>) <br> wasimkhan.7796@gmail.com <br><a
-                        href="mailto:wasimkhan.7786@gmail.com" target="_blank">Click here to Mail</a>
+                      href="mailto:wasimkhan.7786@gmail.com" target="_blank">Click here to Mail</a>
                 </td></tr>
             </tr>
     </table>
 
+
+    <button class="btn" onclick="myFunction()">Hide elements</button>
+    <button class="btn" onclick="myShowFunction()">Display elements</button>
+    <script>
+        function myFunction(){
+            var x = document.getElementsByClassName("hide")
+            for(var i = 0; i < x. length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+        function myShowFunction(){
+            var x = document.getElementsByClassName("hide")
+            for(var i = 0; i < x. length; i++) {
+                x[i].style.display = "block";
+            }
+        }
+    </script>
 </body>
