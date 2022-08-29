@@ -15,102 +15,112 @@
             padding: auto;
 
         }
-        th:hover{
+
+        th:hover {
             background-color: aqua;
         }
-        td:hover{
+
+        td:hover {
             background-color: yellowgreen;
         }
-         th{
+
+        th {
             padding: 3px;
-text-align: left;
-        } 
-         td{
-            padding: 8px;
-        } 
-        .w{
-        color:yellowgreen;
-        background-color:red;
-        padding: 5px;
+            text-align: left;
         }
-        
-   .btn{
-    background-color:lightcoral;
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 10px;
-    cursor: pointer;
-   text-transform: capitalize;
 
-   }
+        td {
+            padding: 8px;
+        }
 
+        .w {
+            color: yellowgreen;
+            background-color: red;
+            padding: 5px;
+        }
+
+        .btn {
+            background-color: lightcoral;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 10px;
+            cursor: pointer;
+            text-transform: capitalize;
+
+        }
     </style>
 
 </head>
 
 <body>
-  
-    <table class="hide" >
+
+    <table class="hide">
         <tr>
-          <img src="unk.png" alt="html tut" style="     margin-left: 45%; width:10%;height:20%;">
+            <img src="unk.png" alt="html tut" style="     margin-left: 45%; width:10%;height:20%;">
             <th>Name</th>
-            <tr>
-                <td>Wasim khalil</p>
-                </tr>
+        <tr>
+            <td>Wasim khalil</p>
+        </tr>
         <tr>
             <th>Email</th>
         </tr>
-            <tr>
-                <td> <mark> wasimkhan.7796@gmail.com </mark></td> <br>
-            </tr>
-        </tr>
-            <th>Description</th>
-            <tr>
-                <td>I want to become a <b style="color:green">Full Stack Developer</b></td><br>
-            </tr>
-        </tr>
-            <th>Skills</th>
-            <tr>
-                <td>HTML,CSS,Wordpress</td>
-            </tr>
-        </tr>
-            <th>Education</th>
-             
         <tr>
-            <td>BBA ( <sup style="color:red"> hons</sup>) from <mark class="w" >Poonch University</mark> </td> <br>
+            <td> <mark> wasimkhan.7796@gmail.com </mark></td> <br>
         </tr>
         </tr>
-            <th>Univerity Link</th>
-            <tr>
-                <td>Poonch University Rawalakot <br> <a href="https://www.upr.edu.pk.com" target="_blank"> Click here for
-                        Website</a></td></tr>
+        <th>Description</th>
+        <tr>
+            <td>I want to become a <b style="color:green">Full Stack Developer</b></td><br>
         </tr>
-            <th>LinkedIn</th>
-            <tr>
-                <td> <a href="https://www.linkedin.com/in/wasim-khan-172584246" target="_blank">Click here to Contact</a>
-                </td></tr>
         </tr>
-            <th>Github</th>
-            <tr>
-                <td>Wasim khan( <sup style="color: red"> Front end developer</sup>) <br> wasimkhan.7796@gmail.com <br><a
-                      href="mailto:wasimkhan.7786@gmail.com" target="_blank">Click here to Mail</a>
-                </td></tr>
-            </tr>
+        <th>Skills</th>
+        <tr>
+            <td>HTML,CSS,Wordpress</td>
+        </tr>
+        </tr>
+        <th>Education</th>
+
+        <tr>
+            <td>BBA ( <sup style="color:red"> hons</sup>) from <mark class="w">Poonch University</mark> </td> <br>
+        </tr>
+        </tr>
+        <th>Univerity Link</th>
+        <tr>
+            <td>Poonch University Rawalakot <br> <a href="https://www.upr.edu.pk.com" target="_blank"> Click here for
+                    Website</a></td>
+        </tr>
+        </tr>
+        <th>LinkedIn</th>
+        <tr>
+            <td> <a href="https://www.linkedin.com/in/wasim-khan-172584246" target="_blank">Click here to Contact</a>
+            </td>
+        </tr>
+        </tr>
+        <th>Github</th>
+        <tr>
+            <td>Wasim khan( <sup style="color: red"> Front end developer</sup>) <br> wasimkhan.7796@gmail.com <br><a
+                    href="mailto:wasimkhan.7786@gmail.com" target="_blank">Click here to Mail</a>
+            </td>
+        </tr>
+        </tr>
     </table>
 
+    <iframe src="https://www.youtube.com/embed/XEpAgCnnYdY" frameborder="0" allow="autoplay;"></iframe>
+    <iframe src="https://www.youtube.com/embed/SIkbJcl9s_I"
+        frameborder="0" allow="autoplay;"></iframe>
 
     <button class="btn" onclick="myFunction()">Hide elements</button>
     <button class="btn" onclick="myShowFunction()">Display elements</button>
     <script>
-        function myFunction(){
+        function myFunction() {
             var x = document.getElementsByClassName("hide")
-            for(var i = 0; i < x. length; i++) {
+            for (var i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
             }
         }
-        function myShowFunction(){
+        function myShowFunction() {
             var x = document.getElementsByClassName("hide")
-            for(var i = 0; i < x. length; i++) {
+            for (var i = 0; i < x.length; i++) {
                 x[i].style.display = "block";
             }
         }
