@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           box-sizing: border-box;
+        }
+        body{
+            background-color: bisque;
+            border: 2px solid black;
+            width: 20%;
+            text-align: center;
+            padding: 20px;
+        }
+        .btn{
+            border: 2px solid bisque;
+            border-radius: 10px;
+            background-color: green;
+            color: white;
+            font-size: 15px;
+        }
+        .btn:hover{
+          
+        cursor: pointer;
+            background-color: gray;
+           
+        }
+       
+      
+    </style>
+</head>
+<body>
+    <h1>Form</h1>
+    <form action="back">
+        Name:
+        <input type="text" name="Name"><br><br>
+        Password:
+        <input type="password"name="password" ><br><br>
+        Email:
+        <input type="email" name="Email" id=""><br><br>
+        Gender:
+      <input type="radio" name="radio"><label for="radio">Male</label>
+      <input type="radio" name="radio"><label for="radio">Female</label><br><br>
+      Contact No:
+      <input type="number" name="number"><br><br>
+      <h2>Qualifications</h2>
+      Degree:
+<select name="degree" id="degree">
+<option>BBA</option>
+<option>Agriculture</option>
+<option>Computer Science</option>
+<option>It</option><br>
+
+
+
+</select><br><br>
+<h2>Hobbies</h2>
+<input type="checkbox" name="chk" id="chk"><label for="">Playing Games</label><br>
+<input type="checkbox" name="chk" id="chk"><label for="">Traveling</label><br>
+<input type="checkbox" name="chk" id="chk"><label for="">Reading Books</label>
+
+<br><br>
+Address: <br>
+<textarea name="textarea" cols="20" rows="5" id="textarea"></textarea><br><br>
+
+Attach Resume:
+<input type="file" name="filefield" id="filefield"><br><br>
+
+<input class="btn" type="submit" value="Submit Form">
+
+
+    
+    </form>
+</body>
+</html>
