@@ -8,20 +8,26 @@
     <style>
         *{
            box-sizing: border-box;
+     
+         
         }
         body{
+          padding: auto;
+          margin: auto;
             background-color: bisque;
-            border: 2px solid black;
-            width: 20%;
-            text-align: center;
-            padding: 20px;
+           width: 50%;
+         
+            text-align: center ;
+   
+
+          
         }
         .btn{
             border: 2px solid bisque;
             border-radius: 10px;
             background-color: green;
             color: white;
-            font-size: 15px;
+            font-size: 18px;
         }
         .btn:hover{
           
@@ -29,45 +35,60 @@
             background-color: gray;
            
         }
+        .frm{
+        text-align: center;
+   
+     font-size: 15px;
+     padding: auto;
+     margin: auto;
+        }
+      
+    
        
       
     </style>
 </head>
 <body>
     <h1>Form</h1>
-    <form action="back">
+    <form class="frm" action="back">
         Name:
-        <input type="text" name="Name"><br><br>
+        <input type="text" name="Name" placeholder="Name"><br><br>
         Password:
-        <input type="password"name="password" ><br><br>
+        <input type="password"name="password"  placeholder="Password"><br><br>
         Email:
-        <input type="email" name="Email" id=""><br><br>
+        <input type="email" name="Email" id="" placeholder="Email"><br><br>
         Gender:
-      <input type="radio" name="radio"><label for="radio">Male</label>
+      <input type="radio" name="radio"><label for="radio" >Male</label>
       <input type="radio" name="radio"><label for="radio">Female</label><br><br>
       Contact No:
-      <input type="number" name="number"><br><br>
+      <input type="number" name="number" placeholder="03xxxxxxxxx"><br><br>
       <h2>Qualifications</h2>
       Degree:
 <select name="degree" id="degree">
 <option>BBA</option>
 <option>Agriculture</option>
 <option>Computer Science</option>
-<option>It</option><br>
-
+<option>It</option></select><br><br>
+Field:
+<select name="field" id="field">
+<option>Web Designing</option>
+<option>E-Commerce</option>
+<option>Digital Marketing</option>
+<option>It</option>
+</select><br>
 
 
 </select><br><br>
 <h2>Hobbies</h2>
-<input type="checkbox" name="chk" id="chk"><label for="">Playing Games</label><br>
-<input type="checkbox" name="chk" id="chk"><label for="">Traveling</label><br>
-<input type="checkbox" name="chk" id="chk"><label for="">Reading Books</label>
+<input class="frm" type="checkbox" name="chk" id="chk"><label for="">Playing Games</label>
+<input class="frm" type="checkbox" name="chk" id="chk"><label for="">Traveling</label>
+<input class="frm" type="checkbox" name="chk" id="chk"><label for="">Reading Books</label>
 
 <br><br>
 Address: <br>
 <textarea name="textarea" cols="20" rows="5" id="textarea"></textarea><br><br>
 
-Attach Resume:
+Attach Resume: <br>
 <input type="file" name="filefield" id="filefield"><br><br>
 
 <input class="btn" type="submit" value="Submit Form">
